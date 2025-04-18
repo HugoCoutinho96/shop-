@@ -1,0 +1,89 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+@layer components {
+  .product-container {
+    @apply grid grid-cols-1 items-stretch gap-16 max-w-[1180px] mx-auto p-4;
+  }
+
+  @media (min-width: 1024px) {
+    .product-container {
+      @apply grid-cols-2;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .product-container {
+      @apply pr-8;
+    }
+  }
+
+  .image-container {
+    @apply w-full max-w-[576px] h-[656px] rounded p-1 flex items-center justify-center;
+    background: linear-gradient(180deg, #1ea483 0%, #7465d4 100%);
+  }
+
+  @media (min-width: 1024px) {
+    .image-container {
+      @apply max-w-[476px] max-h-[556px];
+    }
+  }
+
+  @media (max-width: 640px) {
+    .image-container {
+      @apply w-full h-auto;
+    }
+
+    .image-container img {
+      @apply w-full h-auto;
+    }
+  }
+
+  .product-details {
+    @apply flex flex-col;
+  }
+
+  .product-details h1 {
+    @apply text-2xl font-bold text-gray-300;
+  }
+
+  .product-details span {
+    @apply mt-4 block text-2xl text-gray-300;
+  }
+
+  .product-details p {
+    @apply mt-10 text-base leading-[1.6] text-gray-300;
+  }
+
+  .product-details button {
+    @apply bg-green-600 w-screen border-0 text-white rounded p-5 cursor-pointer font-bold text-base transition-colors;
+  }
+
+  .product-details button:hover {
+    @apply bg-green-500;
+  }
+
+  .product-details a {
+    @apply block mx-auto mt-auto text-lg text-green-500 no-underline font-bold transition-colors;
+  }
+
+  .product-details a:hover {
+    @apply text-green-300;
+  }
+
+  .buttons-container {
+    @apply pb-4 flex justify-evenly gap-4;
+  }
+
+  @media (min-width: 1024px) {
+    .buttons-container {
+      @apply mt-20;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .buttons-container {
+      @apply mt-16;
+    }
+  }
+}

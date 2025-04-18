@@ -1,0 +1,37 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+@layer components {
+  .success-container {
+    @apply flex flex-col items-center justify-center mx-auto p-4;
+  }
+
+  .success-container h1 {
+    @apply text-2xl text-gray-100;
+  }
+
+  .success-container p {
+    @apply text-xl text-gray-300 max-w-[560px] text-center mt-8 leading-[1.4];
+  }
+
+  .success-container a {
+    @apply block mt-20 text-lg text-green-500 no-underline font-bold transition-colors;
+  }
+
+  .success-container a:hover {
+    @apply text-green-300;
+  }
+
+  .success-image-container {
+    @apply max-w-[800px] rounded p-2 mt-16 flex items-center justify-center gap-4 flex-wrap;
+    background: linear-gradient(180deg, #1ea483 0%, #7465d4 100%);
+  }
+
+  .success-image-container img {
+    @apply object-cover;
+  }
+
+  .success-image-container div {
+    @apply flex flex-col items-center;
+  }
+}

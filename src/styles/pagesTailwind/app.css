@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+
+@layer components {
+    .container-layout {
+      @apply flex flex-col items-start justify-center min-h-screen px-4;
+    }
+  
+    .header {
+      @apply flex justify-between items-center relative gap-2 py-8 w-full max-w-screen-xl mx-auto;
+    }
+  
+    .header div div {
+      @apply flex flex-col text-gray-300;
+    }
+  
+    .header div div strong {
+      @apply text-lg;
+    }
+}

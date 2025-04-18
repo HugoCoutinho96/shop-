@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+@layer components {
+  .quantity-container {
+    @apply flex items-center justify-center gap-4 w-28 border border-gray-300 rounded px-0 py-2 bg-gray-100 mt-2;
+  }
+
+  .quantity-button {
+    @apply flex items-center bg-transparent border-none text-xl font-bold cursor-pointer text-gray-800 transition-colors;
+  }
+
+  
+  .quantity-button:hover {
+    @apply text-green-500;
+  }
+  
+  .quantity-button-remove {
+    @apply flex items-center bg-transparent border-none text-xl font-bold cursor-pointer text-gray-800 transition-colors;
+  }
+  
+  .quantity-button-remove:hover{
+    @apply text-red-700;
+  }
+
+  .quantity-value {
+    @apply min-w-[1rem] text-center font-bold text-base;
+  }
+}
