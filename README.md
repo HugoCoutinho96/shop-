@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛍️ Vibe Shop
 
-## Getting Started
+**Vibe Shop** é uma loja online de camisetas personalizadas. Este projeto frontend foi desenvolvido com tecnologias modernas visando performance, responsividade e uma ótima experiência do usuário.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Tecnologias
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **[Next.js 15](https://nextjs.org/)** (App Router)
+- **[Tailwind CSS v4](https://tailwindcss.com/)** – estilização com classes utilitárias
+- **[TypeScript](https://www.typescriptlang.org/)** – tipagem estática para mais segurança no código
+- **[Stripe](https://stripe.com/)** – integração de pagamentos
+- **[phosphor-react](https://phosphoricons.com/)** – ícones modernos
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ✨ Funcionalidades
 
-## Learn More
+- ✅ Página de produtos com layout responsivo  
+- ✅ Adição de produtos ao carrinho  
+- ✅ Carrinho persistente com `localStorage`  
+- ✅ Integração com Stripe Checkout  
+- ✅ Feedback visual ao adicionar itens  
+- ✅ SEO básico com `metadata` do Next.js  
+- ✅ Interface moderna e intuitiva com Tailwind CSS  
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎯 Objetivo
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Este projeto foi criado com o objetivo de:
 
-## Deploy on Vercel
+- Praticar a stack moderna de desenvolvimento web
+- Simular um e-commerce real com fluxo de compra
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📸 Preview
+
+![image](https://github.com/user-attachments/assets/c0297ae1-f00d-4e6a-9e75-29a50147b2ba)
