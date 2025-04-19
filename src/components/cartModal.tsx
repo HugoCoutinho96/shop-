@@ -49,7 +49,6 @@ export default function Modal() {
             top: '0%',
             right: '0%',
             background: 'white',
-            padding: '20px 0',
             width: '300px',
             height: '100vh',
           }}
@@ -58,6 +57,9 @@ export default function Modal() {
             display: 'flex',
             flexDirection: 'column',
             gap: '1rem',
+            height: '100vh',
+            overflow: 'auto',
+            padding: '20px 0',
           }}>
             <div className='px-4'>
               <Dialog.Title style={{fontSize: '1.5rem', fontWeight: 'bold'}}>Carrinho de compras</Dialog.Title>
@@ -73,8 +75,8 @@ export default function Modal() {
               }
             </div>
 
-          <div className='flex flex-col justify-between gap-6 h-[82vh] px-2'>
-            <div className='flex flex-col gap-2 overflow-auto'>
+          <div className='flex flex-col justify-between gap-6 px-2'>
+            <div className='flex flex-col gap-2 overflow-auto max-h-full flex-1'>
               {cart.map(item => {
                 return (
                   <div className='cart-container' key={item.id}>
@@ -88,7 +90,8 @@ export default function Modal() {
               )})}
             </div>
             
-            <div className='px-4'>
+          </div>
+            <div className='px-4 shrink-0 mt-auto'>
               {cart.length <= 0 ? null :
                   <strong>{`Valor Total: ${priceFormatted(fullPrice)}`}</strong>
                 }    
@@ -103,7 +106,6 @@ export default function Modal() {
                 </Dialog.Close>
               </div>
             </div>
-          </div>
           </div>
         </Dialog.Content>
       </Dialog.Portal>
