@@ -3,6 +3,7 @@ import Image from "next/image";
 import logoImg from "@/assets/logo.svg"
 import { CartProvider } from "@/context/CartContext";
 import Modal from "@/components/cartModal";
+import { Toaster } from "sonner"
 import "./globals.css"
 
 const roboto = Roboto({
@@ -28,6 +29,7 @@ export default function RootLayout({
   return (
     <html lang="pt">
       <body className={`${roboto.className}`}>
+        <Toaster position="top-center" richColors />
         <CartProvider>
           <div className="container-layout">
             <header className="header">

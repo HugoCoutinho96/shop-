@@ -1,7 +1,8 @@
 'use client'
 
 import { useCart } from '@/context/CartContext'
-
+import { toast } from "sonner"
+ 
 type AddToCartButtonProps = {
   id: string
   name: string
@@ -24,6 +25,7 @@ export default function AddToCartButton({ id, name, price, priceId, imageUrl }: 
       quantity: 1,
       imageUrl
     })
+    toast.success(`Produto ${name} adicionado ao carrinho!`)
   }
 
   return (
